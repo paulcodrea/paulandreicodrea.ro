@@ -2,6 +2,7 @@
 <html lang = "en">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Noto Serif' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
@@ -9,32 +10,35 @@
   <link rel="icon" href="PAC_logo.png" type="image/icon type">
   <link rel="stylesheet" type="text/css" href="home.css"/>
 </head>
+
 <body>
+
   <header class="header_page">
     <!-- <div id = "page-loader">
       <div class="loader"><strong>Loading</strong></div>
     </div> -->
 
-    <div class="logo_header">
-      <img src="https://lh3.googleusercontent.com/6lNWkYOCiBAmc_ULHcr_p6J0kivpCC6IyTf1VSEhoLvAqtcAU-VsAFcsSEb_0EH_fJDVw2nnAmQim-xBmNHdkhRxTg9ePYib3gzPm4TXF-FH6ni8v5ANv4z9xQGu31npVqOdM3O5IA=w2400" alt="Logo" width="300" height= "200">
-      <!-- <a id="dark-logo" class="logotype" href='/'><img src="https://lh3.googleusercontent.com/6lNWkYOCiBAmc_ULHcr_p6J0kivpCC6IyTf1VSEhoLvAqtcAU-VsAFcsSEb_0EH_fJDVw2nnAmQim-xBmNHdkhRxTg9ePYib3gzPm4TXF-FH6ni8v5ANv4z9xQGu31npVqOdM3O5IA=w2400" alt="Logo">
-      </a> -->
+    <div class="all_header">
+      <center>
+        <img class="logo_header_centre" src="https://lh3.googleusercontent.com/6lNWkYOCiBAmc_ULHcr_p6J0kivpCC6IyTf1VSEhoLvAqtcAU-VsAFcsSEb_0EH_fJDVw2nnAmQim-xBmNHdkhRxTg9ePYib3gzPm4TXF-FH6ni8v5ANv4z9xQGu31npVqOdM3O5IA=w2400" alt="Logo" >
+      </center>
+
+      <div class="menu_bar_left">
+        <a href='#'>HOME</a>
+        <a href='#about'>ABOUT</a>
+        <a href='#Projects' >PROJECTS</a>
+      </div>
+
+      <div class="menu_bar_right">
+        <a href='#CV' target="_blank">CV</a>
+        <a href='#notes'>NOTES</a>
+        <!-- open in a new tab page the CV using target="_blank"-->
+        <a href='#CONTACT'>CONTACT</a>
+      </div>
+
+      <hr class="border_line">
+
     </div>
-
-    <hr class="border_line">
-
-    <div class="menu_bar_left">
-      <a href='#'>HOME</a>
-      <a href='#about'>ABOUT</a>
-    </div>
-
-    <div class="menu_bar_right">
-      <a href='#Projects' >PROJECTS</a>
-      <!-- open in a new tab page the CV using target="_blank" -->
-      <a href='#CV' target="_blank" >CV</a>
-    </div>
-
-
   </header>
 
   <section id="page_body">
@@ -46,18 +50,46 @@
         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
-
   </section>
 
   <hr class="border_line_copyright">
 
+  <div class="social_media_btn">
   <center>
-    <i class="fab fa-twitter" style="font-size:36px;margin-left: 30px;margin-right: 30px"></i>
-    <i class="fab fa-linkedin-in" style="font-size:36px;margin-left: 30px;margin-right: 30px"></i>
-    <i class="fab fa-instagram" style="font-size:36px;margin-left: 30px;margin-right: 30px"></i>
-    <i class="fab fa-github" style="font-size:36px;margin-left: 30px;margin-right: 30px"></i>
-
+    <a class="fab fa-twitter" href="https://twitter.com/PaulAndreiC_" target="_blank"></a>
+    <a class="fab fa-linkedin-in" href="https://www.linkedin.com/in/paul-andrei-codrea/" target="_blank"></a>
+    <a class="fab fa-instagram" href="https://www.instagram.com/paul_codrea/" target="_blank"></a>
+    <a class="fab fa-github" href="https://github.com/paulcodrea" target="_blank"></a>
   </center>
+  </div>
+
+  <br>
+
+  <center>
+    <i class="far fa-copyright" style="font-size:16px;display: inline"> Paul-Andrei CODREA 2019. All rights reserved.</i>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">BACK TO TOP</button>
+  </center>
+
+
+<!--Java script code W3school - for top button-->
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("myBtn").style.display = "block";
+    } else {
+      document.getElementById("myBtn").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
 
 </body>
 
