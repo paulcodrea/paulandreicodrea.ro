@@ -20,7 +20,7 @@
 
     <div class="all_header">
       <center>
-        <img class="logo_header_centre" src="https://lh3.googleusercontent.com/6lNWkYOCiBAmc_ULHcr_p6J0kivpCC6IyTf1VSEhoLvAqtcAU-VsAFcsSEb_0EH_fJDVw2nnAmQim-xBmNHdkhRxTg9ePYib3gzPm4TXF-FH6ni8v5ANv4z9xQGu31npVqOdM3O5IA=w2400" alt="Logo" >
+        <img class="logo_header_centre" src="https://lh3.googleusercontent.com/8uALHmOImz11IK3BukpFh4cOkvaVTE0DmqMygqrcP4VWxal01VKtwbfrmkwde3UV-JWPVgVRSdNfK-_ZtZQ00hq0QoL3i2yW4h2DPXWcMQNBas-zUesBGA7Ql1JQEJuVO7yR-VvBqQ=w2400" alt="Logo" >
       </center>
 
       <div class="menu_bar_left">
@@ -37,6 +37,12 @@
       </div>
 
       <hr class="border_line">
+
+      <!-- <div class="stars">
+        <i class="fas fa-star" href="#"></i>
+        <i class="fas fa-star" href="#"></i>
+        <i class="fas fa-star" href="#"></i>
+      </div> -->
 
     </div>
   </header>
@@ -67,7 +73,7 @@
 
   <center>
     <i class="far fa-copyright" style="font-size:16px;display: inline"> Paul-Andrei CODREA 2019. All rights reserved.</i>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">BACK TO TOP</button>
+    <button onclick="goToTop()" id="topButton" title="Go to top">BACK TO TOP</button>
   </center>
 
 
@@ -78,14 +84,14 @@
 
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("myBtn").style.display = "block";
+      document.getElementById("topButton").style.display = "block";
     } else {
-      document.getElementById("myBtn").style.display = "none";
+      document.getElementById("topButton").style.display = "none";
     }
   }
 
   // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
+  function goToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
